@@ -1,2 +1,3 @@
 - [ ] link to leonardodelbino.com
-- [ ] Make so that posts inherit sidebar header and footer
+- [x] Make so that posts inherit sidebar header and footer
+- [ ] Add author line on top of posts
