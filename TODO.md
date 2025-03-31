@@ -5,4 +5,4 @@
 - [ ] Add author line on top of posts
 - [ ] Add L logo to homepage and icon
 - [ ] Blog button scrolls down to the blog
-- [ ] Is there anything inportant to be written
+- [ ] Is there anything important to be written
