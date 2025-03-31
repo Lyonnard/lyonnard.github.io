@@ -1,0 +1,2 @@
+- [ ] link to leonardodelbino.com
+- [ ] Make so that posts inherit sidebar header and footer
