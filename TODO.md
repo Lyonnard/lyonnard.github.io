@@ -1,3 +1,5 @@
 - [ ] link to leonardodelbino.com
 - [x] Make so that posts inherit sidebar header and footer
 - [ ] Add author line on top of posts
+- [ ] Add L logo
+- [ ] Blog button scrolls down to the blog
