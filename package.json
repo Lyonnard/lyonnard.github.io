@@ -1,0 +1,24 @@
+{
+  "name": "eleventy-training-ground",
+  "version": "1.0.0",
+  "description": "I decided to lean Eleventy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lyonnard/eleventy-training-ground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Lyonnard/eleventy-training-ground/issues"
+  },
+  "homepage": "https://github.com/Lyonnard/eleventy-training-ground#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}

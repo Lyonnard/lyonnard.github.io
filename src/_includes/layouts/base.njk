@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>{{ title or site.name }}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="icon" type="image/svg" href="/images/logo-L-black.svg"/>
+  </head>
+
+  <body class="is-preload">
+    <div id="wrapper">
+
+      <div id="main">
+        <div class="inner">
+          {% include "partials/main-header.njk" %}
+          {{ content | safe }}
+        </div>
+      </div>
+
+      {% include "partials/sidebar.njk" %}
+
+    </div>
+
+    {% include "partials/scripts.njk" %}
+  </body>
+</html>
