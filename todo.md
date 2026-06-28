@@ -1,7 +1,8 @@
 # Todo
 
 ## Fixes
-- [ ] Fix "About" and "Work With Me" CTA buttons (currently link to `#`)
+- [x] Fix "About" CTA button
+- [ ] Fix "Work With Me" CTA button (currently links to `#`)
 - [x] Fix typo in "Why a website?" post description: "did I made" → "did I make"
 - [ ] Fix favicon visibility on dark browser tab bars (black SVG is invisible on dark backgrounds)
 
