@@ -7,7 +7,7 @@
 
 ## Content
 - [ ] Migrate blog to Substack and replace blog section on the website with a link to it
-- [ ] Add a bucket list page
+- [x] Add a bucket list page
 - [ ] Add a movies, books, music etc. page
 
 ## Future
