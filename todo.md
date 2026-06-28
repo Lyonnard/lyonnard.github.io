@@ -12,5 +12,9 @@
 - [ ] Add a movies, books, music etc. page
 
 ## Future
-- [ ] Build out the About section
+- [x] Build out the About section
 - [ ] Build out the Work With Me section
+
+## Technical
+- [ ] Host both on github pages and on leonardodelbino.com
+- [ ] Start the substack to move the blog
