@@ -2,9 +2,9 @@
 
 ## Fixes
 - [x] Fix "About" CTA button
-- [ ] Fix "Work With Me" CTA button (currently links to `#`)
+- [x] Fix "Work With Me" CTA button (currently links to `#`)
 - [x] Fix typo in "Why a website?" post description: "did I made" → "did I make"
-- [ ] Fix favicon visibility on dark browser tab bars (black SVG is invisible on dark backgrounds)
+- [x] Fix favicon visibility on dark browser tab bars (black SVG is invisible on dark backgrounds)
 
 ## Content
 - [ ] Migrate blog to Substack and replace blog section on the website with a link to it
