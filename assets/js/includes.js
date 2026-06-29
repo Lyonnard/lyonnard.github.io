@@ -26,6 +26,7 @@
             <li><a href="/">Homepage</a></li>
             <li><a href="/about/">About</a></li>
             <li><a href="/bucket-list/">Bucket List</a></li>
+            <li><a href="/work-with-me/">Work With Me</a></li>
           </ul>
         </nav>
         <section>
