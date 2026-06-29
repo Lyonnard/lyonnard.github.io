@@ -13,7 +13,7 @@
 
 ## Future
 - [x] Build out the About section
-- [ ] Build out the Work With Me section
+- [x] Build out the Work With Me section
 
 ## Technical
 - [ ] Host both on github pages and on leonardodelbino.com
