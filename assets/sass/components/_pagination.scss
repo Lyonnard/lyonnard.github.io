@@ -4,6 +4,8 @@
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
+@use "sass:color";
+
 /* Pagination */
 
 	ul.pagination {
@@ -34,15 +36,15 @@
 				text-align: center;
 
 				&.active {
-					background-color: _palette(accent);
+					background-color: _palette(brand);
 					color: _palette(bg) !important;
 
 					&:hover {
-						background-color: lighten(_palette(accent), 3);
+						background-color: color.adjust(_palette(brand), $lightness: 3%);
 					}
 
 					&:active {
-						background-color: darken(_palette(accent), 3);
+						background-color: color.adjust(_palette(brand), $lightness: -3%);
 					}
 				}
 			}
