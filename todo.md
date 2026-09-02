@@ -10,7 +10,7 @@
 - [x] Migrate blog to Substack and replace blog section on the website with a link to it
 - [x] Add a bucket list page
 - [x] Bring the blog back in-house (EN/IT bilingual posts, homepage + /blog/ grid, language switcher)
-- [ ] Import real posts from the Substack export (blocked on the export file)
+- [x] Import real posts from the Substack export
 
 ## Future
 - [x] Build out the About section
