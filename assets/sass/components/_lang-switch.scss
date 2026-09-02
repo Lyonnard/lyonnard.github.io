@@ -1,0 +1,14 @@
+/* Language switch */
+
+	#lang-switch {
+		font-size: 0.9em;
+		margin: 0 0 (_size(element-margin) * 0.5) 0;
+
+		a {
+			border-bottom-color: transparent;
+		}
+
+		.current {
+			color: _palette(fg-light);
+		}
+	}

@@ -47,9 +47,9 @@
           <header class="major">
             <h2>Blog</h2>
           </header>
-          <p>I write about aviation, deep tech, and building things. All posts live on Substack.</p>
+          <div id="blog-grid" class="posts"></div>
           <ul class="actions">
-            <li><a href="https://leonardodelbino.substack.com" class="button big" target="_blank" rel="noopener">Read on Substack</a></li>
+            <li><a href="/blog/" class="button big">See all posts</a></li>
           </ul>
         </section>
 
@@ -65,8 +65,14 @@
   <script src="/assets/js/browser.min.js"></script>
   <script src="/assets/js/breakpoints.min.js"></script>
   <script src="/assets/js/util.js"></script>
+  <script src="/assets/js/posts-data.js"></script>
+  <script src="/assets/js/lang.js"></script>
+  <script src="/assets/js/blog.js"></script>
   <script src="/assets/js/includes.js"></script>
   <script src="/assets/js/main.js"></script>
+  <script>
+    renderGrid(document.getElementById('blog-grid'), { limit: 3 });
+  </script>
 
 </body>
 

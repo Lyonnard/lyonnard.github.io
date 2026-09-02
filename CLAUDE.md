@@ -34,10 +34,12 @@ Breakpoints (defined in `libs/_vars.scss`): `xxsmall`, `xsmall`, `small`, `mediu
 
 | Path | Purpose |
 |------|---------|
-| `index.html` | Homepage — banner + blog post grid |
+| `index.html` | Homepage — banner + blog post grid (3 most recent) |
 | `about/index.html` | Bio, research background, Akhetonics |
 | `bucket-list/index.html` | Personal goals and milestones |
-| `posts/*/index.html` | Individual blog posts |
+| `work-with-me/index.html` | Work With Me page |
+| `blog/index.html` | Full blog post grid (all posts) |
+| `posts/<slug>/` | Individual blog posts — see "Blog / adding a post" below |
 
 ## Shared Header, Sidebar & Footer
 
@@ -55,11 +57,40 @@ Each HTML page has empty placeholders that get populated:
 <script src="/assets/js/main.js"></script>
 ```
 
+## Blog / adding a post
+
+Posts live under `posts/<slug>/`, where `<slug>` is `YYYY-MM-DD-short-title`. The homepage and `/blog/` both render their post grid client-side from a single hand-maintained data file — nothing else needs to change when you add a post beyond the two steps below. Copy `posts/_TEMPLATE/` as a starting point.
+
+**1. Create the post file(s).** A post is either single-language or dual-language:
+
+- **Single-language** — just `posts/<slug>/index.html`, with `<html lang="en" data-post-langs="en">` (or `lang="it" data-post-langs="it"`).
+- **Dual-language** — three files:
+  - `posts/<slug>/index.html` — a redirect stub (copy `posts/_TEMPLATE/index.html` verbatim, no edits needed beyond the `<title>`) that sends visitors to whichever language `assets/js/lang.js` resolves for them (their stored choice, else browser language, else `data-post-default`, which defaults to `en`).
+  - `posts/<slug>/en.html` — the English article, `<html lang="en" data-post-langs="en,it">`.
+  - `posts/<slug>/it.html` — the Italian article, `<html lang="it" data-post-langs="en,it">`.
+
+  Both `en.html`/`it.html` need a `<div id="lang-switch"></div>` inside `<header class="main">` (the template already has it) — `lang.js` renders the "EN | IT" toggle there automatically.
+
+**2. Add one entry to `assets/js/posts-data.js`** — this is what drives the homepage/`/blog/` grids:
+```js
+{
+  slug: "YYYY-MM-DD-short-title",
+  date: "YYYY-MM-DD",
+  image: "/images/example.jpg", // or null
+  langs: {
+    en: { title: "...", excerpt: "..." },
+    it: { title: "...", excerpt: "..." } // omit if it.html doesn't exist
+  }
+}
+```
+The `langs` keys here must match each file's `data-post-langs` — there's no build step to enforce this, so keep them in sync by hand.
+
+That's it — no other file needs editing. `assets/js/lang.js` handles language detection/redirect/switching, `assets/js/blog.js` renders the grids from `posts-data.js`.
+
 ## Known TODOs
 
 See `todo.md` for the full list. Key outstanding items:
 - "Work With Me" button links to `#` — not yet implemented
-- Blog migration to Substack planned
 - Hosting on both leonardodelbino.com and lyonnard.github.io planned
 
 ## Workflow Rules
