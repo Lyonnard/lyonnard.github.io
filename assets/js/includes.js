@@ -42,7 +42,7 @@
         <footer id="footer">
           <p class="copyright">
             &copy; Leonardo Del Bino. All rights reserved.<br>
-            Design adapted from: <a href="https://html5up.net">HTML5 UP</a>.
+            Design adapted from: <a href="https://html5up.net">HTML5 UP</a>. <a href="/ai-policy/">AI Policy</a>.
           </p>
         </footer>
       </div>
