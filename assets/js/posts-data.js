@@ -2,11 +2,15 @@
 // Add one entry per post, newest first. `slug` must match the folder
 // name under posts/, and the `langs` keys must match that post's
 // data-post-langs attribute. See CLAUDE.md for the full authoring guide.
+//
+// `categories` is an array of zero or more of the known category names
+// (see window.BLOG_CATEGORIES below) — used by the /blog/ filter bar.
 window.POSTS = [
   {
     slug: "2026-07-02-my-first-steps-into-the-sailing-world",
     date: "2026-07-02",
     image: "/images/sailing-1.jpeg",
+    categories: ["Sailing"],
     langs: {
       en: {
         title: "My first steps into the sailing world",
@@ -22,6 +26,7 @@ window.POSTS = [
     slug: "2026-06-29-why-a-website",
     date: "2026-06-29",
     image: "/images/why-a-website-hero.png",
+    categories: ["Thoughts"],
     langs: {
       en: {
         title: "Why a website? (And why I moved to Substack)",
@@ -33,6 +38,7 @@ window.POSTS = [
     slug: "2026-06-29-gliding-an-affordable-way-to-fly",
     date: "2026-06-29",
     image: "/images/gliding-hero.jpeg",
+    categories: ["Gliding"],
     langs: {
       en: {
         title: "Gliding, an affordable way to fly",
@@ -40,4 +46,17 @@ window.POSTS = [
       }
     }
   },
+];
+
+// Known category names, in display order for the /blog/ filter bar.
+// A category only shows a button when at least one post uses it, so
+// it's fine for this list to include categories no post has yet.
+window.BLOG_CATEGORIES = [
+  "Sailing",
+  "Gliding",
+  "Startup",
+  "Deep Tech",
+  "Personal Finance",
+  "Electronics",
+  "Thoughts",
 ];

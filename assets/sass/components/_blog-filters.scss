@@ -1,0 +1,58 @@
+@use "sass:color";
+
+/* Blog filters */
+
+	.blog-filters {
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5em 0.75em;
+		margin: 0 0 _size(element-margin) 0;
+
+		.blog-filters-buttons {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.5em;
+		}
+
+		.blog-filters-button {
+			@include vendor('transition', (
+				'background-color #{_duration(transition)} ease-in-out',
+				'color #{_duration(transition)} ease-in-out'
+			));
+			border: solid 1px _palette(border);
+			border-radius: _size(border-radius);
+			display: inline-block;
+			font-size: 0.8em;
+			font-weight: _font(weight-bold);
+			line-height: 2em;
+			padding: 0 1em;
+
+			&:hover {
+				border-color: _palette(brand);
+			}
+
+			&.active {
+				background-color: _palette(brand);
+				border-color: _palette(brand);
+				color: _palette(bg) !important;
+
+				&:hover {
+					background-color: color.adjust(_palette(brand), $lightness: 3%);
+				}
+			}
+		}
+
+		.blog-filters-count {
+			color: _palette(fg-light);
+			font-size: 0.8em;
+		}
+
+		.blog-filters-reset {
+			font-size: 0.8em;
+		}
+	}
+
+	p.blog-filters-empty {
+		color: _palette(fg-light);
+	}
